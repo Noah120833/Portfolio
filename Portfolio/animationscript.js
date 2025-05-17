@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 icon2.addEventListener('click', () => { 
    alert("Writint to you via Email");
-   window.open("mailto:deinname@example.com", "_blank");  // Hier kannst du die gewünschte URL angeben.
+   window.open("mailto:jonnykaeptain@gmail.com", "_blank");  // Hier kannst du die gewünschte URL angeben.
 });
 
 icon3.addEventListener('click', () => { 
