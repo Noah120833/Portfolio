@@ -560,6 +560,7 @@ body.dark-mode #js:hover {
 }
 
 #project3 {
+   margin-top: 50px;
    background-image: url("images/DropdeckIcon_edited.jpg");
 }
 
@@ -570,6 +571,7 @@ body.dark-mode #js:hover {
 }
 
 #project4 {
+   margin-top: 50px;
    background:grey;
 }
 
