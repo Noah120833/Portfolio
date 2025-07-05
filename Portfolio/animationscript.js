@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
    let p1text = document.getElementById('p1text');
    let project2 = document.getElementById('project2');
    let p2text = document.getElementById('p2text');
+   let project3 = document.getElementById('project3');
+   let p3text = document.getElementById('p3text');
+   let project4 = document.getElementById('project4');
+   let p4text = document.getElementById('p4text');
    let particleContainer = document.getElementById('particle-container');
 
    console.log('Alle Elemente wurden definiert.');
