@@ -513,10 +513,11 @@ body.dark-mode #js:hover {
    height: 40vh;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 0.5fr 3fr;
+   grid-template-rows: 0.5fr 3fr 3fr;
    grid-template-areas:
    "heading3 heading3"
-   "project1 project2";
+   "project1 project2"
+   "project3 project4";
    background-color: transparent;
    font-size: 2vh;
    border-radius: 15px;
