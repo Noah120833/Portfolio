@@ -172,5 +172,17 @@ project1.addEventListener('click', () => {
    window.open("https://noah120833.github.io/Typewave/Typewave/index.html", "_blank");
 });
 
+project3.addEventListener('click', () => { 
+   alert("Transferring to Project 3");
+   console.log('Project 3 clicked');
+   window.open("https://noah120833.github.io/Dropdeck/Dropdeckpage/index.html", "_blank");
+});
+
+project4.addEventListener('click', () => { 
+   alert("Transferring to Project 4");
+   console.log('Project 4 clicked');
+   window.open("", "_blank");
+});
+
 
 });
