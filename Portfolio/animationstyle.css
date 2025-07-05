@@ -558,6 +558,26 @@ body.dark-mode #js:hover {
    cursor: pointer;
 }
 
+#project3 {
+   background-image: url("images/DropdeckIcon_edited.jpg");
+}
+
+#project3:hover {
+   transform: scale(1.03);
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   cursor: pointer;
+}
+
+#project4 {
+   background:grey;
+}
+
+#project4:hover {
+   transform: scale(1.03);
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   cursor: pointer;
+}
+
 .project-text {
    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
    justify-self: center;
