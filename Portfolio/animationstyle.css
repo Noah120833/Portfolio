@@ -619,10 +619,6 @@ body.dark-mode #js:hover {
   justify-self: center;
 }
 
-#projects {
-  margin-bottom: 0; /* Kein zusätzlicher Abstand nach unten, Abstand ist bei #Clients */
-}
-
 #cheading {
   font-size: 3vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
