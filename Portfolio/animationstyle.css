@@ -505,24 +505,25 @@ body.dark-mode #js:hover {
 }
 
 #projects {
-   margin-top: 70px;
-   grid-area: projects;
-   padding: 20px;
-   padding-left: 50px;
-   width: 62vh;
-   height: 40vh;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 0.5fr 3fr 3fr;
-   grid-template-areas:
-   "heading3 heading3"
-   "project1 project2"
-   "project3 project4";
-   background-color: transparent;
-   font-size: 2vh;
-   border-radius: 15px;
-   justify-self: center;
-   transition: all 0.3s ease-in-out;
+  margin-top: 70px;
+  margin-bottom: 50px; /* Abstand nach unten für Trennung zu Clients */
+  grid-area: projects;
+  padding: 20px;
+  padding-left: 50px;
+  width: 62vh;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 3fr;
+  grid-template-areas:
+    "heading3 heading3"
+    "project1 project2"
+    "project3 project4";
+  background-color: transparent;
+  font-size: 2vh;
+  border-radius: 15px;
+  justify-self: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .project {
@@ -603,8 +604,8 @@ body.dark-mode #js:hover {
 
 /* --- Testemonials Section (Clients) --- */
 #Clients {
-  margin-top: 200px;         /* Abstand nach oben */
-  margin-bottom: 40px;      /* Abstand nach unten */
+  margin-top: 0; /* Kein zusätzlicher Abstand oben, Abstand kommt von #projects */
+  margin-bottom: 40px;
   grid-area: clients;
   padding: 20px 50px;
   width: 62vh;
@@ -675,8 +676,11 @@ body.dark-mode #js:hover {
 }
 
 @media (max-width: 900px) {
+  #projects {
+    margin-bottom: 30px;
+  }
   #Clients {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 20px;
     width: 95vw;
     padding: 10px;
@@ -684,8 +688,11 @@ body.dark-mode #js:hover {
 }
 
 @media (max-width: 600px) {
+  #projects {
+    margin-bottom: 15px;
+  }
   #Clients {
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 10px;
     width: 99vw;
     padding: 2vw;
