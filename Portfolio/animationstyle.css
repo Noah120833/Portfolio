@@ -511,7 +511,7 @@ body.dark-mode #js:hover {
   padding: 20px;
   padding-left: 50px;
   width: 62vh;
-  height: 40vh;
+  min-height: 55vh; /* Mehr Platz für alle vier Projekte */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 3fr 3fr;
@@ -561,7 +561,6 @@ body.dark-mode #js:hover {
 }
 
 #project3 {
-   margin-top: 50px;
    background-image: url("images/DropdeckIcon_edited.png");
 }
 
@@ -572,7 +571,6 @@ body.dark-mode #js:hover {
 }
 
 #project4 {
-   margin-top: 50px;
    background:grey;
 }
 
@@ -604,7 +602,7 @@ body.dark-mode #js:hover {
 
 /* --- Testemonials Section (Clients) --- */
 #Clients {
-  margin-top: 0; /* Kein zusätzlicher Abstand oben, Abstand kommt von #projects */
+  margin-top: 30px; /* Abstand nach oben zu Projects */
   margin-bottom: 40px;
   grid-area: clients;
   padding: 20px 50px;
