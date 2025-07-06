@@ -603,7 +603,7 @@ body.dark-mode #js:hover {
 
 /* --- Testemonials Section (Clients) --- */
 #Clients {
-  margin-top: 60px;         /* Abstand nach oben */
+  margin-top: 200px;         /* Abstand nach oben */
   margin-bottom: 40px;      /* Abstand nach unten */
   grid-area: clients;
   padding: 20px 50px;
