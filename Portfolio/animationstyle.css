@@ -601,6 +601,112 @@ body.dark-mode #js:hover {
 }
 
 
+/* --- Testemonials Section (Clients) --- */
+#Clients {
+  margin-top: 70px;
+  grid-area: clients;
+  padding: 20px 50px;
+  width: 62vh;
+  min-height: 25vh;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0,0.12) 0px 1px 8px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  justify-self: center;
+}
+
+#cheading {
+  font-size: 3vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #9900FF;
+  text-align: center;
+}
+
+#reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  width: 100%;
+  justify-items: center;
+}
+
+#review1, #review2 {
+  background: rgba(61, 61, 61, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 18px 22px;
+  min-width: 180px;
+  max-width: 250px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+#review1 #img1, #review2 #img2 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #be5dff;
+  margin: 0 auto 10px auto;
+  background-size: cover;
+  background-position: center;
+}
+
+#review1 #name1, #review2 #name2 {
+  font-weight: 600;
+  font-size: 2vh;
+  color: #18171A;
+}
+
+#review1 #text, #review2 #text2 {
+  font-size: 1.7vh;
+  color: #4d4d4d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Anpassung */
+@media (max-width: 900px) {
+  #Clients {
+    width: 95vw;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  #reviews {
+    gap: 10px;
+  }
+  #review1, #review2 {
+    min-width: 120px;
+    max-width: 180px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  #Clients {
+    width: 99vw;
+    padding: 2vw;
+  }
+  #reviews {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #review1, #review2 {
+    width: 90vw;
+    max-width:none;
+  }
+}
+
+
+
+
+
+
+
 @media (max-width: 900px) {
   body {
     padding-top: 60px;
