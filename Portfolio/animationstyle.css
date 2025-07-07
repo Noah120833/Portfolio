@@ -641,6 +641,7 @@ body.dark-mode #js:hover {
   gap: 2vw;
   width: 100%;
   justify-items: center;
+  margin-bottom: 50px; /* Abstand nach unten */
 }
 
 #review1, #review2 {
@@ -660,22 +661,26 @@ body.dark-mode #js:hover {
 }
 
 #review1 #img1, #review2 #img2 {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #be5dff 0%, #9900ff 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  font-size: 2.1vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-right: 12px;
-  margin-bottom: 0;
-  background-size: cover;
-  background-position: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-weight: bold;
+   font-size: 2.1vh;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-right: 12px;
+   margin-bottom: 0;
+   background-size: cover;
+   background-position: center;
 }
+
+/* Unterschiedliche Hintergründe direkt im HTML setzen:
+    <div id="img1" style="background-image: url('images/client1.png')"></div>
+    <div id="img2" style="background-image: url('images/client2.png')"></div>
+*/
 #review1 .review-header, #review2 .review-header {
   display: flex;
   flex-direction: row;
@@ -704,6 +709,7 @@ body.dark-mode #js:hover {
   font-weight: 400;
   letter-spacing: 0.1px;
 }
+
 
 @media (max-width: 900px) {
   #projects {

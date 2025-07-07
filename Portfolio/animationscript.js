@@ -52,6 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
    let project4 = document.getElementById('project4');
    let p4text = document.getElementById('p4text');
    let particleContainer = document.getElementById('particle-container');
+   let cheading = document.getElementById("cheading")
+   let Clients = document.getElementById("Clients")
+   let name1 = document.getElementById("name1")
+   let name2 = document.getElementById("name2")
+   let text = document.getElementById("text") // Korrigiert: text statt text1
+   let text2 = document.getElementById("text2")
+   let line = document.getElementById("line")
+   let review1 = document.getElementById("review1")
+   let review2 = document.getElementById("review2")
 
    console.log('Alle Elemente wurden definiert.');
 
@@ -108,11 +117,18 @@ document.addEventListener('DOMContentLoaded', () => {
       decription1.style.color = 'lightgrey';
       mode.style.color = '#9900FF';
       location.style.borderColor = "white";
+      Clients.style.background = 'transparent';
+      review1.style.boxShadow = '0px 0px 30px 8px rgba(189, 91, 255, 0.5)';
+      review2.style.boxShadow = '0px 0px 30px 8px rgba(189, 91, 255, 0.5)';
+      review1.style.borderColor=" #BD5BFF";
+      review2.style.borderColor=" #BD5BFF";
+      review1.style.background = '#272727';
+      review2.style.background = '#272727';
       
 
       // Buttons und Texte anpassen
-      [title,icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3 ].forEach((el) => {
-         el.style.color = '#FFFFFF';
+      [title,icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3, cheading, text, text2, line, name1, name2 ].forEach((el) => {
+         if (el) el.style.color = '#FFFFFF';
        
       });
 
@@ -120,22 +136,20 @@ document.addEventListener('DOMContentLoaded', () => {
       darkmode = true;
       } else {
          document.body.classList.toggle('dark-mode');
-         document.body.style.backgroundColor = ''; // Entfernt Inline-Stil
-         document.body.style.color = ''; // Entfernt Inline-Stil
+         document.body.style.backgroundColor = '';
+         document.body.style.color = '';
 
          // Entferne alle Inline-Stile der spezifischen Elemente
-         [maintainer, aboutContainer, languages, adversitesment2, decription1, mode, location].forEach((el) => {
-            el.removeAttribute('style'); // Entfernt alle Inline-Stile
+         [maintainer, aboutContainer, languages, adversitesment2, decription1, mode, location, Clients, line].forEach((el) => {
+            if (el) el.removeAttribute('style');
          });
 
-         // Entferne Inline-Stile von Buttons und Texten
-         [title, icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3].forEach((el) => {
-            el.removeAttribute('style'); // Entfernt alle Inline-Stile
+         // Entferne Inline-Stile von Buttons und Texten (alle, die oben gesetzt wurden)
+         [title, icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3, cheading, text, text2, name1, name2].forEach((el) => {
+            if (el) el.removeAttribute('style');
          });
 
-         console.log('Dark Mode deaktiviert.');
          darkmode = false;
-
       }
    });
 
