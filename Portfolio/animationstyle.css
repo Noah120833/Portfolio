@@ -638,6 +638,7 @@ body.dark-mode #js:hover {
 #reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 2vw;
   width: 100%;
   justify-items: center;
