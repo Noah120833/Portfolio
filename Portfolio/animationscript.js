@@ -58,9 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
    let name2 = document.getElementById("name2")
    let text = document.getElementById("text") // Korrigiert: text statt text1
    let text2 = document.getElementById("text2")
+    let text3 = document.getElementById("text3")
+    let name3 = document.getElementById("name3")
    let line = document.getElementById("line")
    let review1 = document.getElementById("review1")
    let review2 = document.getElementById("review2")
+   let review3 = document.getElementById("review3")
+   let reviews = document.getElementById("reviews")
 
    console.log('Alle Elemente wurden definiert.');
 
@@ -120,14 +124,18 @@ document.addEventListener('DOMContentLoaded', () => {
       Clients.style.background = 'transparent';
       review1.style.boxShadow = '0px 0px 30px 8px rgba(189, 91, 255, 0.5)';
       review2.style.boxShadow = '0px 0px 30px 8px rgba(189, 91, 255, 0.5)';
+      review3.style.boxShadow = '0px 0px 30px 8px rgba(189, 91, 255, 0.5)';
       review1.style.borderColor=" #BD5BFF";
       review2.style.borderColor=" #BD5BFF";
+      review3.style.borderColor=" #BD5BFF";
+      review3.style.color="white";
       review1.style.background = '#272727';
       review2.style.background = '#272727';
+       review3.style.background = '#272727';
       
 
       // Buttons und Texte anpassen
-      [title,icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3, cheading, text, text2, line, name1, name2 ].forEach((el) => {
+      [title,icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3, cheading, text, text2, text3,  line, name1, name2, name3 ].forEach((el) => {
          if (el) el.style.color = '#FFFFFF';
        
       });
@@ -140,12 +148,12 @@ document.addEventListener('DOMContentLoaded', () => {
          document.body.style.color = '';
 
          // Entferne alle Inline-Stile der spezifischen Elemente
-         [maintainer, aboutContainer, languages, adversitesment2, decription1, mode, location, Clients, line].forEach((el) => {
+         [maintainer, aboutContainer, languages, adversitesment2, decription1, mode, location, Clients, line, reviews, review1, review2, review3].forEach((el) => {
             if (el) el.removeAttribute('style');
          });
 
          // Entferne Inline-Stile von Buttons und Texten (alle, die oben gesetzt wurden)
-         [title, icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3, cheading, text, text2, name1, name2].forEach((el) => {
+         [title, icon, p1text, p2text, located, country, location, about, heading2, htext, ctext, jtext, heading3, cheading, text, text2, text3, name1, name2, name3].forEach((el) => {
             if (el) el.removeAttribute('style');
          });
 
